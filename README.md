@@ -1,9 +1,6 @@
 # SCC403 Data Mining 
 
-![MSc Data Science](https://your-university-logo-url.com)
-
-**Author**: Your Name
-**MSc Data Science**
+**Author**: Dino Huang
 
 ## Abstract
 
