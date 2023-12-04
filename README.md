@@ -1,45 +1,61 @@
-# SCC403 Data Mining 
+# Comparative Analysis of Clustering and Classification Algorithms in Data Mining
 
-**Author**: Dino Huang
+## Authors
+- Dino Huang
 
 ## Abstract
+This study explores four common methods in data prospecting: two types of cluster analysis (K-means and DBSCAN) and two types of classification analysis (logistic regression and SVM). The objective is to address clustering and classification problems in data mining.
 
-In this study, we explore four common data mining analysis methods, including two types of cluster analysis and two types of classification analysis. The cluster analysis section uses K-means for partitioning and DBSCAN for density-based clustering, while the classification analysis employs logistic regression and support vector machines (SVM). This README provides an overview of the key sections and findings of the coursework.
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Pre-processing](#pre-processing)
-- [Clustering](#clustering)
-- [Classification](#classification)
-- [Conclusion](#conclusion)
-- [References](#references)
+## Keywords
+data mining, k-means, DBSCAN, logistic regression, SVM
 
 ## Introduction
-
-In the era of big data, various analytics methods are available, including cluster analytics and classification analytics. Cluster analysis aims to group similar data, while classification analysis assigns class labels to data points. The methods explored in this study include K-means, DBSCAN, logistic regression, and SVM.
+The project focuses on cluster and classification analytics. We delve into K-means and DBSCAN for cluster analysis and logistic regression and SVM for classification, addressing the challenges and peculiarities of each method.
 
 ## Pre-processing
+Data pre-processing includes cleaning, standardizing, and dimensionality reduction using Principal Component Analysis (PCA).
 
-Data pre-processing is essential to ensure data quality. This section describes the steps taken to clean and standardize the data, including the use of Principal Component Analysis (PCA) for dimensionality reduction.
+### Data Cleaning
+- Dataset 1: Normal distribution, no missing values, significant multicollinearity addressed with PCA.
+- Dataset 2: Early records removed due to lack of comparability, normalization and PCA applied due to collinearity.
+
+### Principal Component Analysis (PCA)
+PCA was used to reduce dimensionality while preserving data variance. Explained variances for clustering and classification datasets were examined to determine the final dimensionality.
 
 ## Clustering
+The essay explores K-means and DBSCAN for cluster analysis. K-means, a partitioning method, and DBSCAN, a density-based method, are applied to address unsupervised learning problems.
 
-The clustering section presents the results of two clustering algorithms: K-means and DBSCAN. Visualizations and findings related to these algorithms are discussed.
+### K-means
+K-means clustering’s effectiveness is explored using the elbow method for determining the optimal number of clusters.
+
+### DBSCAN
+DBSCAN's ability to identify clusters of any shape without pre-specified cluster numbers is demonstrated.
 
 ## Classification
+Classification algorithms, logistic regression and SVM, are applied. Their unique approaches in dealing with data points relevant to classification are discussed.
 
-The classification section evaluates the performance of logistic regression and SVM. Key metrics such as accuracy, precision, recall, and F1 score are reported for both algorithms. Decision boundaries are visualized to demonstrate the classification results.
+### Logistic Regression (LR)
+The LR model's performance is evaluated with a confusion matrix, and its decision boundaries are visualized.
+
+### Support Vector Machine (SVM)
+SVM's effectiveness in creating a categorical hyperplane is assessed, along with its decision boundaries.
 
 ## Conclusion
+The study compares and contrasts different clustering and classification algorithms. The effectiveness of each method in the context of the provided datasets is discussed.
 
-In conclusion, this study compares different data mining methods and their performance on the dataset used. It discusses the effectiveness of clustering and classification algorithms and suggests areas for future research.
+## Visualizations and Results
+
+### Clustering Results
+- ![K-means Clustering (2D)](images/k-mean.png)
+- ![DBSCAN Clustering (2D)](images/dbscan.png)
+
+### Classification Results
+- ![LR Decision Boundary](images/lr.png)
+- ![SVM Decision Boundary](images/svm.png)
 
 ## References
+- A comprehensive list of references is included, ranging from Ay et al. (2023) on K-means to Wu et al. (2022) on DBSCAN.
 
-A list of references cited in the coursework is provided here.
-
-## Appendix
-
-Additional information or code related to the research process can be included in this section.
-
+## Appendices
+- Appendix A: Correlation diagrams for cluster and classification datasets.
+- Appendix B: Code snippets for clustered data analysis.
